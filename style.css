@@ -1,0 +1,300 @@
+
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+/*-------------------navtest------------------------*/
+header{
+  background-color: rgba(78, 78, 78);
+  position: fixed;
+  width: 100%;
+}
+
+
+li{
+  list-style: none;
+}
+
+a{
+  color:white;
+  text-decoration: none;
+}
+
+
+
+/*--------------------------------navbar---------------------------------*/
+
+
+.navbar{
+  min-height:70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+
+
+
+.nav-menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  font-size: 1.4rem;
+  margin-right: 10rem;
+}
+
+
+.nav-name{
+  font-size: 2rem;
+  margin-left: 8rem;
+}
+
+.nav-link{
+  transition: 0.5s ease;
+}
+
+.nav-link:hover{
+  color:rgb(29, 27, 27);
+}
+
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+
+
+.bar{
+  display: block;
+  width: 25px;
+  height:3px;
+  margin:5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+@media(max-width:768px){
+  .hamburger{
+      display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2){
+      opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1){
+      transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
+  }
+  
+  .nav-name{
+      margin-left: 0;
+  }
+  .nav-menu{
+      position: fixed;
+      left: -100%;
+      top: 70px;
+      gap:0;
+      flex-direction: column;
+      background-color: rgba(78, 78, 78);
+      width:100%;
+      text-align: center;
+      transition: 0.3s;
+  }
+
+  .nav-item{
+      margin: 16px 0;
+  }
+
+  .nav-menu.active{
+      left:0;
+  }
+
+  
+}
+
+/*------------------------------------------------------ABOUT SECTION-------------------------------------------------*/
+
+
+
+.about-contents{
+  background-color: rgb(238, 231, 231);
+  padding-bottom: 2%;
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.header-container{
+  margin-bottom: 4rem;
+}
+
+.headings{
+  font-weight: 42;
+  color: rgb(29, 29, 29);
+  opacity: 0.95;
+}
+
+hr.underline {
+  border-top: 2px solid #343a40;
+  opacity: 0.75;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+
+
+
+
+.about-row{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.about-photo{
+  display: flex;
+  justify-content: center;
+}
+
+.about-para{
+  display: flex;
+  justify-content: center;
+  width:40%;
+  margin-left: 2rem;
+}
+
+.dp{
+  width: 335px;
+  -moz-box-shadow: 10px 10px 5px #564d4d;
+  -webkit-box-shadow: 10px 10px 5px #575252;
+  box-shadow: 10px 10px 5px #676363;
+  -moz-border-radius:25px;
+  -webkit-border-radius:25px;
+  border-radius: 25px;
+}
+
+.para{
+  font-size: 2.4vh;
+}
+
+.links{
+  color: rgb(141, 47, 32);
+  text-decoration: none;
+}
+
+
+.skill-heading{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+@media(max-width:768px){
+
+  hr.underline{
+    width: 90%;
+  }
+  .about-row{
+    flex-direction: column;
+  }
+  .header-container{
+    margin-bottom: 0;
+  }
+
+  .about-para{
+    margin-left: 10rem;
+    width:70%;
+  }
+
+}
+
+@media(max-width:800px){
+
+  hr.underline {
+    width: 90%;
+  }
+  .about-row{
+    flex-direction: column;
+  }
+  .about-photo{
+    margin-bottom: 50px;
+  }
+
+  .header-container{
+    margin-bottom: 0;
+  }
+
+  .about-para{
+    margin-left: 3rem;
+    width:80%;
+  }
+
+}
+
+
+
+.skill-row{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.skill-box2{
+  margin-left: 8rem;
+}
+
+
+.skill-icon{
+  display: flex;
+  justify-content: center;
+  width:100px;
+}
+
+.skill-description{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+@media(max-width:800px){
+  .skill-row{
+    flex-direction: column;
+  }
+  .skill-box{
+    margin-left: 8rem;
+    margin-bottom: 2rem;
+  }
+}
+
+
+
+
+/*----------------------fractal tree---------------------------*/
+
+
