@@ -205,10 +205,6 @@ hr.underline {
 }
 
 
-.skill-heading{
-  display: flex;
-  justify-content: center;
-}
 
 
 
@@ -260,37 +256,41 @@ hr.underline {
 .skill-row{
   display: flex;
   justify-content: center;
-  flex-direction: row;
+  flex-direction: column;
+  margin-left: 40%;
 }
 
-.skill-box2{
-  margin-left: 8rem;
+.skill-box-sp{
+  margin-bottom: 2rem;
+}
+
+.skill-box{
+  margin-bottom: 2rem;
 }
 
 
 .skill-icon{
-  display: flex;
-  justify-content: center;
   width:100px;
 }
 
-.skill-description{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-
-
-@media(max-width:800px){
+@media(min-width:768px){
   .skill-row{
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 0;
+  }
+  .skill-box-sp{
+    margin-left: 0;
   }
   .skill-box{
     margin-left: 8rem;
-    margin-bottom: 2rem;
   }
+
 }
+
+
 
 
 
